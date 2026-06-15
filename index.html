@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakmina Community</title>
+    <style>
+        :root {
+            --primary-color: #00f2fe;
+            --secondary-color: #4facfe;
+            --bg-color: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px rgba(0,242,254,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+
+        .hub-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 242, 254, 0.4);
+            box-shadow: 0 15px 30px rgba(0, 242, 254, 0.1);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            text-align: left;
+        }
+
+        .card ul li {
+            padding: 8px 0;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+            color: #0f172a;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 242, 254, 0.5);
+        }
+
+        /* Movie Hub Specific Color Accent */
+        .movie-card:hover {
+            border-color: rgba(244, 63, 94, 0.4);
+            box-shadow: 0 15px 30px rgba(244, 63, 94, 0.1);
+        }
+        .movie-card .btn {
+            background: linear-gradient(45deg, #f43f5e 0%, #f43f5e 100%);
+            box-shadow: 0 4px 15px rgba(244, 63, 94, 0.3);
+        }
+        .movie-card .btn:hover {
+            box-shadow: 0 6px 20px rgba(244, 63, 94, 0.5);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #64748b;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>✨ Lakmina Community ✨</h1>
+        <div class="subtitle">🎧 Music Lovers & 🎭 Movie Lovers එකම තැනක</div>
+
+        <div class="hub-section">
+            <!-- Music Hub -->
+            <div class="card">
+                <!-- GitHub Image Link for Song -->
+                <img src="https://raw.githubusercontent.com/Lakmina2005/My-group-/main/SONG.jpg" alt="Music Hub" class="card-img">
+                <div class="card-content">
+                    <div>
+                        <h2>🎧 Music Hub 🍃✨</h2>
+                        <ul>
+                            <li>🎶 New Songs</li>
+                            <li>🎵 DJ Mixes</li>
+                            <li>🎤 Sinhala & English Music</li>
+                        </ul>
+                    </div>
+                    <!-- මෙතන # වෙනුවට ඔබේ WhatsApp/Telegram Group ලින්ක් එක දාන්න -->
+                    <a href="#" class="btn">Join Music Hub</a>
+                </div>
+            </div>
+
+            <!-- Movie Hub -->
+            <div class="card movie-card">
+                <!-- GitHub Image Link for Movie -->
+                <img src="https://raw.githubusercontent.com/Lakmina2005/My-group-/main/MOVIE.jpg" alt="Movie Hub" class="card-img">
+                <div class="card-content">
+                    <div>
+                        <h2>🎭 Movie Hub 🏅</h2>
+                        <ul>
+                            <li>🎬 Latest Movies</li>
+                            <li>🍿 TV Series</li>
+                            <li>🔥 Entertainment Updates</li>
+                        </ul>
+                    </div>
+                    <!-- මෙතන # වෙනුවට ඔබේ WhatsApp/Telegram Group ලින්ක් එක දාන්න -->
+                    <a href="#" class="btn">Join Movie Hub</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; Lakmina Manujaya
+        </footer>
+    </div>
+
+</body>
+</html>
